@@ -35,8 +35,25 @@
       });
     
     </script>
-            <audio autoplay controls loop hidden>
+            <audio autoplay controls loop hidden id="audio">
                 <source src="./files/ls_cubanmusic1.ogg" type="audio/ogg" volume="-1000">
             </audio>
-
+    <script language="javascript">
+        var musicas = [
+            'files/ls_cubanmusic1.ogg',
+            'files/ls_latin.ogg',
+            'files/ls_country_rock_am_radio_loop.ogg',
+            'files/ls_dustmusic1.ogg',
+            'files/ls_dustmusic2.ogg',
+            'files/ls_dustmusic3.ogg',
+            'files/ls_flamenco.ogg',
+            'files/ls_mirame.ogg',
+            'files/ls_pslp.ogg',
+            'files/ls_tottfiy.ogg'
+        ];
+        var musica = musicas[Math.floor(Math.random()*musicas.length)]
+        document.getElementById('audio').src = musica
+        document.getElementById('audio').load()
+        document.getElementById('audio').play()
+    </script>
 </html>
