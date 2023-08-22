@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Gunter loading Screen</title>
+        <style>
+            .background {
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-position:center;
+                background-size: cover;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="background"></body>
+
+    <script language="javascript">
+
+        var images = [
+            "https://media.discordapp.net/attachments/1022473114946371606/1143529719359340644/loading_tttlong.png"
+        ];
+
+        document.body.style.backgroundImage = "url('" + images[ Math.floor( Math.random() * images.length ) ] + "')";
+
+    </script>
+    <script type="text/javascript">
+        
+      (function() {
+      var volume = 1;
+        $("audio").each(function(){ this.volume = volume/1; });
+      });
+    
+    </script>
+            <audio autoplay controls loop hidden>
+                <source src="https://cdn.discordapp.com/attachments/1022473114946371606/1143534809013043360/loadtttlong.ogg" type="audio/ogg" volume="-1000">
+            </audio>
+
+</html>
