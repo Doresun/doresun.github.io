@@ -21,7 +21,47 @@
     <script language="javascript">
 
         var images = [
-            "https://media.discordapp.net/attachments/1022473114946371606/1146456797843042334/loading_tttlong3.png"
+            "https://i.imgur.com/5Mmu4Rw.jpg",
+            "https://i.imgur.com/QXxQgPy.jpg",
+            "https://i.imgur.com/8UFlb2d.png",
+            "https://i.imgur.com/kKuh108.jpg",
+            "https://i.imgur.com/hBFbOYJ.jpg",
+            "https://i.imgur.com/sY95vr8.jpg",
+            "https://i.imgur.com/mleMJVl.png",
+            "https://i.imgur.com/fr9TTrP.jpg",
+            "https://i.imgur.com/BWPzZiH.jpg",
+            "https://i.imgur.com/xSKuLb8.jpg",
+            "https://i.imgur.com/ttUabn7.jpg",
+            "https://i.imgur.com/2H4uBOW.jpg",
+            "https://i.imgur.com/Bl3mpgu.jpg",
+            "https://i.imgur.com/Ifx559m.jpg",
+            "https://i.imgur.com/75XjoJF.jpg",
+            "https://i.imgur.com/sDLeXAN.jpg",
+            "https://i.imgur.com/qHjPKDw.jpg",
+            "https://i.imgur.com/guClzFX.png",
+            "https://i.imgur.com/knBQQYO.png",
+            "https://i.imgur.com/uN2B24H.jpg",
+            "https://i.imgur.com/Fdc3w1V.jpg",
+            "https://i.imgur.com/646oNRC.jpg",
+            "https://i.imgur.com/Mt625Ww.jpg",
+            "https://i.imgur.com/MhVvJ8J.jpg",
+            "https://i.imgur.com/78WqG12.jpg",
+            "https://i.imgur.com/KycveQB.jpg",
+            "https://i.imgur.com/GfqkZDd.jpg",
+            "https://cdn.discordapp.com/attachments/838040665245483021/1057310182679531600/fon.jpg",
+            "https://i.imgur.com/N3mOMcY.jpg",
+            "https://i.imgur.com/GW6iII4.jpg",
+            "https://i.imgur.com/UJob5d1.jpg",
+            "https://i.imgur.com/np3zM7w.jpg",
+            "https://i.imgur.com/k17Kv27.jpg",
+            "https://i.imgur.com/cfKpW6I.jpg",
+            "https://i.imgur.com/z9mpORy.jpg",
+            "https://i.imgur.com/IjOMpf1.jpg",
+            "https://i.imgur.com/qMRK8xj.jpg",
+            "https://i.imgur.com/5ALO7av.png",
+            "https://cdn.discordapp.com/attachments/938495088185712661/1108739381533102100/ezgif.com-gif-maker_12.gif",
+            "https://cdn.discordapp.com/attachments/820941222381355009/1111834759677624320/static.gif",
+            "https://i.imgur.com/xfGVqXS.jpg"
         ];
 
         document.body.style.backgroundImage = "url('" + images[ Math.floor( Math.random() * images.length ) ] + "')";
@@ -35,8 +75,26 @@
       });
     
     </script>
-            <audio autoplay controls loop hidden>
-                <source src="https://cdn.discordapp.com/attachments/1125154322267766797/1160178532299837590/loadingshelter.ogg" type="audio/ogg" volume="-1000">
+            <audio autoplay controls loop hidden id="music">
+                <source src="https://cdn.discordapp.com/attachments/865553665543766046/1159833539165032538/This_Is_Halloween.ogg?ex=65327628&is=65200128&hm=5069af8232aa492b158d7a4d6fd220c98946c10d6ace65e7f20cb7bf87d48781&" type="audio/ogg" volume="-1000">
             </audio>
+
+            <script language="javascript">
+                var musicas = [
+                    "https://cdn.discordapp.com/attachments/820941222381355009/968755725918691368/music.ogg",
+                    "https://cdn.discordapp.com/attachments/946692520488890369/1001112606393774210/load2.ogg",
+                    "https://cdn.discordapp.com/attachments/820941222381355009/1036965991164420116/background.ogg",
+                    "https://cdn.discordapp.com/attachments/838040665245483021/1057312576565940234/alium.ogg",
+                    "https://cdn.discordapp.com/attachments/820941222381355009/1073134889785905183/background4.ogg",
+                    "https://cdn.discordapp.com/attachments/904252843584798770/1073257481922424917/background4.ogg",
+                    "https://cdn.discordapp.com/attachments/822770922644570153/1106169893654638622/holdontight.ogg",
+                    "https://cdn.discordapp.com/attachments/820941222381355009/1111834760029941840/background5.mp3",
+                    "https://cdn.discordapp.com/attachments/865553665543766046/1159833539165032538/This_Is_Halloween.ogg"
+                ];
+                var musica = musicas[Math.floor(Math.random()*musicas.length)]
+                document.getElementById('audio').src = musica
+                document.getElementById('audio').load()
+                document.getElementById('audio').play()
+            </script>
 
 </html>
