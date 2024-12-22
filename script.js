@@ -1,4 +1,4 @@
-const ws = new WebSocket('ws://muhich2.asuscomm.com:8765')
+const ws = new WebSocket('wss://muhich2.asuscomm.com:8765')
 ws.onopen = (event) => {
     ws.send('Connected!')
 }
