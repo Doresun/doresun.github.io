@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fdgdsfgjhdfklg</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background: black;
+    }
+    .fullscreen-gif {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <img src="files/afar.png" class="fullscreen-gif" id="image" alt="GIF Background" />
+  <audio autoplay loop>
+    <source src="files/hl2_song17.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
